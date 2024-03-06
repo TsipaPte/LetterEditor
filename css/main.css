@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes btnAnimation {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+::selection{
+    background-color: #c8ec8e;
+}
+body {
+    font-family: Montserrat;
+    background-color: #f8f8f8;
+}
+.main_header {
+    background-color: #e7e7e7;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.main_header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+}
+.main_header a {
+    text-decoration: none;
+    color: #000000;
+    transition: color .2s;
+}
+.main_header a:hover {
+    color: #d1b158;
+    transition: color .2s;
+}
+.letter-container {
+    background-color: #cacaca;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 16px;
+}
+.letter_text {
+    resize: both;
+    max-width: 1200px;
+    max-height: 600px;
+    font-family: Montserrat;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+.letter_text:focus {
+    outline: none;
+}
+.letter_text::-webkit-scrollbar {
+    width: 16px;
+}
+.letter_text::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+.letter_text::-webkit-scrollbar-thumb {
+    background-color: #735f77;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    cursor: auto;
+}
+.hint {
+    border-left: 5px solid #43a3c0;
+    padding-left: 10px;
+}
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    user-select: none;
+}
+.btn:hover {
+    animation-name: btnAnimation;
+    animation-duration: .3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-delay: .3s;
+}
